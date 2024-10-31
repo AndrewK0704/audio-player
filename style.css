@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+/*--------------------------------------------------------------*/
+
+.container{
+  height: calc(100vh - 128px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('./assets/img/lemonade.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;   
+}
+
+.player{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 580px;
+  height: 690px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color:gray;
+}  
+
+.image{
+  width: 580px;
+  height: 500px;
+
+  background-image: url('./assets/img/lemonade.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.box{
+  width: 580px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 540px;
+  height: 140px;
+}
+
+.play{
+  width: 72px;
+  height: 72px;
+
+  background-image: url('./assets/svg/play.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pause{
+  width: 72px;
+  height: 72px;
+
+  background-image: url('./assets/svg/pause.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.description{
+  max-width: 440px;
+}
+
+.author{
+  font-size: 32px;
+  color:chartreuse;
+}
+
+.track-name{
+  font-size: 32px;
+  color: white;
+}
+
+.control{
+  width: 46px;
+}
+
+.next{
+  width: 46px;
+  height: 46px;
+
+  background-image: url('./assets/svg/forward.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.prev{
+  width: 46px;
+  height: 46px;
+
+  background-image: url('./assets/svg/backward.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#duration-track{
+  align-self: flex-end;
+  margin-right: 60px;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+progress[value]::-webkit-progress-bar{
+  background-color:black;
+}
+
+#progress{
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+#out{
+  align-self: flex-start;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.sound{
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+/*--------------------------------------------------------------*/
+  
+.footer{
+  height: 128px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:gray;
+    
+  font-size: 32px;
+  text-align: center;
+   
+  border: 2px solid black;
+}
+  
+.footer div{
+  color: aliceblue;
+}  
+  
+.footer img{
+  border-radius: 16px;
+  background-color: aliceblue;
+  height: 96px;
+  width: 96px;
+}

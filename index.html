@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>js30#1.2-audio-player</title>
+</head>
+<body>
+    <div class="container">
+        <audio id="audio-player" src="./assets/audio/beyonce.mp3"></audio>
+        <div class="player">
+          <div class="image"></div>
+          <div class="box">
+            <div class="menu">
+              <div class="play"></div>
+              <div class="description">
+                <div class="author">Beyonce</div>
+                <div class="track-name">Don't Hurt Yourself</div>
+              </div>
+              <div class="control">
+                <div class="prev"></div>
+                <div class="next"></div>
+              </div>
+            </div>
+            <p id="duration-track">3:54</p>
+            <progress id="progress" max="100" value="0"></progress>
+            <p id="out">0:0</p>
+            <div class="sound"><input type="range" id="volume" min=0 max=100>Звук</div>
+          </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div>2024</div>
+            <div>
+              <a href="https://github.com/AndrewK0704">
+                <img src="./assets/svg/github-icon.svg" alt="GitHub">
+              </a>
+            </div>
+            <div>
+              <a href="https://rs.school/courses/javascript-preschool-ru">
+                <img src="./assets/svg/rs_school_js.svg" alt="RS School">
+              </a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./index.js"></script>
+    
+</body>
+</html>
